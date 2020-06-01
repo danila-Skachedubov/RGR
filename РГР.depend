@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1591021756 source:d:\Данила\Учеба\Языки программирования С++\РГР\main.cpp
+	<iostream>
+	"ULIST.h"
+	"UList.cpp"
+
+1591003160 source:d:\Данила\Учеба\Языки программирования С++\РГР\ulist.cpp
+	<iostream>
+	<fstream>
+	<string>
+	"ULIST.h"
+
+1590913088 d:\Данила\Учеба\Языки программирования С++\РГР\ulist.h
+
+1591022397 d:\Данила\Учеба\Языки программирования С++\РГР\ulist.cpp
+	<iostream>
+	<fstream>
+	<string>
+	"ULIST.h"
+
