@@ -37,7 +37,7 @@ void ulist<T, V>::AddToHead()
     temp->coutry = e;
     temp->next = head;
     head = temp;
-    fout << "Íà ñêëàä ïðèáûë òîâàð:" << c << " â " << d << " èç " << e << " ìàññîé: " << a << " â êîëè÷åñòâå: " << b << '\n';
+    fout << "ÐÐ° ÑÐºÐ»Ð°Ð´ Ð¿Ñ€Ð¸Ð±Ñ‹Ð» Ñ‚Ð¾Ð²Ð°Ñ€:" << c << " Ð² " << d << " Ð¸Ð· " << e << " Ð¼Ð°ÑÑÐ¾Ð¹: " << a << " Ð² ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ðµ: " << b << '\n';
     fout.close();
 }
 template<typename T, typename V>
@@ -46,11 +46,11 @@ void ulist<T, V>::ShowL()
     warehouse<T, V>* temp = head;
     while (temp != NULL)
     {
-        cout << "Âåñ ãðóçà:" << temp->weight << " ";
-        cout << "Êîëè÷åñòâî òîâàðà:" << temp->quantity << " ";
-        cout << "Íàçâàíèå òîâàðà:" << temp->name << " ";
-        cout << "Äàòà ïîãðóçêè íà ñêëàä:" << temp->date << " ";
-        cout << "Ãðóç èç:" << temp->coutry << " " << endl;
+        cout << "Ð’ÐµÑ Ð³Ñ€ÑƒÐ·Ð°:" << temp->weight << " ";
+        cout << "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ñ‚Ð¾Ð²Ð°Ñ€Ð°:" << temp->quantity << " ";
+        cout << "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ Ñ‚Ð¾Ð²Ð°Ñ€Ð°:" << temp->name << " ";
+        cout << "Ð”Ð°Ñ‚Ð° Ð¿Ð¾Ð³Ñ€ÑƒÐ·ÐºÐ¸ Ð½Ð° ÑÐºÐ»Ð°Ð´:" << temp->date << " ";
+        cout << "Ð“Ñ€ÑƒÐ· Ð¸Ð·:" << temp->coutry << " " << endl;
         temp = temp->next;
     }
 }
@@ -76,7 +76,7 @@ int ulist<T, V>::SizePro()
         temp = temp->next;
         c++;
     }
-    cout << "Ñåé÷àñ íà ñêëàäå " << c << " òîâàðà" << endl;
+    cout << "Ð¡ÐµÐ¹Ñ‡Ð°Ñ Ð½Ð° ÑÐºÐ»Ð°Ð´Ðµ " << c << " Ñ‚Ð¾Ð²Ð°Ñ€Ð°" << endl;
     return c;
 }
 template<typename T, typename V>
@@ -166,11 +166,11 @@ void ulist<T, V>::printelement()
     {
         if (temp->name == x)
         {
-            cout << "Âåñ ãðóçà:" << temp->weight << " ";
-            cout << "Êîëè÷åñòâî òîâàðà:" << temp->quantity << " ";
-            cout << "Íàçâàíèå òîâàðà:" << temp->name << " ";
-            cout << "Äàòà ïîãðóçêè íà ñêëàä:" << temp->date << " ";
-            cout << "Ãðóç èç:" << temp->coutry << " " << endl;
+            cout << "Ð’ÐµÑ Ð³Ñ€ÑƒÐ·Ð°:" << temp->weight << " ";
+            cout << "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ñ‚Ð¾Ð²Ð°Ñ€Ð°:" << temp->quantity << " ";
+            cout << "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ Ñ‚Ð¾Ð²Ð°Ñ€Ð°:" << temp->name << " ";
+            cout << "Ð”Ð°Ñ‚Ð° Ð¿Ð¾Ð³Ñ€ÑƒÐ·ÐºÐ¸ Ð½Ð° ÑÐºÐ»Ð°Ð´:" << temp->date << " ";
+            cout << "Ð“Ñ€ÑƒÐ· Ð¸Ð·:" << temp->coutry << " " << endl;
         }
         temp = temp->next;
     }
@@ -185,11 +185,11 @@ void ulist<T, V>::findDate()
     {
         if (temp->date == v)
         {
-            cout << "Âåñ ãðóçà:" << temp->weight << " ";
-            cout << "Êîëè÷åñòâî òîâàðà:" << temp->quantity << " ";
-            cout << "Íàçâàíèå òîâàðà:" << temp->name << " ";
-            cout << "Äàòà ïîãðóçêè íà ñêëàä:" << temp->date << " ";
-            cout << "Ãðóç èç:" << temp->coutry << " " << endl;
+            cout << "Ð’ÐµÑ Ð³Ñ€ÑƒÐ·Ð°:" << temp->weight << " ";
+            cout << "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ñ‚Ð¾Ð²Ð°Ñ€Ð°:" << temp->quantity << " ";
+            cout << "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ Ñ‚Ð¾Ð²Ð°Ñ€Ð°:" << temp->name << " ";
+            cout << "Ð”Ð°Ñ‚Ð° Ð¿Ð¾Ð³Ñ€ÑƒÐ·ÐºÐ¸ Ð½Ð° ÑÐºÐ»Ð°Ð´:" << temp->date << " ";
+            cout << "Ð“Ñ€ÑƒÐ· Ð¸Ð·:" << temp->coutry << " " << endl;
         }
         temp = temp->next;
     }
@@ -216,7 +216,7 @@ bool ulist<T, V>::delName()
             else {
                 help->next = temp->next;
             }
-            fout << "Ñî ñêëàäà óøåë òîâàð:" << temp->name << " â " << temp->date << " èç " << temp->coutry << " ìàññîé: " << temp->weight << " â êîëè÷åñòâå: " << temp->quantity << endl;
+            fout << "Ð¡Ð¾ ÑÐºÐ»Ð°Ð´Ð° ÑƒÑˆÐµÐ» Ñ‚Ð¾Ð²Ð°Ñ€:" << temp->name << " Ð² " << temp->date << " Ð¸Ð· " << temp->coutry << " Ð¼Ð°ÑÑÐ¾Ð¹: " << temp->weight << " Ð² ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ðµ: " << temp->quantity << endl;
             delete temp;
             fout.close();
             return true;
@@ -250,7 +250,7 @@ bool ulist<T, V>::delCountry()
             {
                 help->next = temp->next;
             }
-            fout << "Ñî ñêëàäà óøåë òîâàð:" << temp->name << " â " << temp->date << " èç " << temp->coutry << " ìàññîé: " << temp->weight << " â êîëè÷åñòâå: " << temp->quantity << endl;
+            fout << "Ð¡Ð¾ ÑÐºÐ»Ð°Ð´Ð° ÑƒÑˆÐµÐ» Ñ‚Ð¾Ð²Ð°Ñ€:" << temp->name << " Ð² " << temp->date << " Ð¸Ð· " << temp->coutry << " Ð¼Ð°ÑÑÐ¾Ð¹: " << temp->weight << " Ð² ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ðµ: " << temp->quantity << endl;
             delete temp;
             fout.close();
             return true;
@@ -282,7 +282,7 @@ bool ulist<T, V>::delDate()
             else {
                 help->next = temp->next;
             }
-            fout << "Ñî ñêëàäà óøåë òîâàð:" << temp->name << " â " << temp->date << " èç " << temp->coutry << " ìàññîé: " << temp->weight << " â êîëè÷åñòâå: " << temp->quantity << endl;
+            fout << "Ð¡Ð¾ ÑÐºÐ»Ð°Ð´Ð° ÑƒÑˆÐµÐ» Ñ‚Ð¾Ð²Ð°Ñ€:" << temp->name << " Ð² " << temp->date << " Ð¸Ð· " << temp->coutry << " Ð¼Ð°ÑÑÐ¾Ð¹: " << temp->weight << " Ð² ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ðµ: " << temp->quantity << endl;
             delete temp;
             fout.close();
             return true;
@@ -323,3 +323,4 @@ void ulist<T, V>::Lsort()
         }
     }
 }
+
